@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/firstcolor"
+    android:padding="18dp"
+    tools:context=".quizquestion">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SCORE: 0"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/score1"
+        android:layout_marginTop="10dp"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QUESTION : 1/a"
+        android:layout_below="@+id/score1"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/question1"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="question"
+        android:layout_below="@+id/question1"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="80dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/quiz1"></TextView>
+
+    <RadioGroup
+        android:id="@+id/radiog1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/quiz1"
+        android:layout_marginTop="20dp">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radiobtn1"
+            android:text="opt1">
+        </RadioButton>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radiobtn2"
+            android:text="opt2">
+        </RadioButton>
+
+    </RadioGroup>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/radiog1"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/btn2"
+        android:text="CONFIRM"
+        android:background="@color/colorAccent">
+    </Button>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:30"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/timer"
+        android:layout_marginTop="20dp"></TextView>
+
+</RelativeLayout>
